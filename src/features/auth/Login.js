@@ -30,6 +30,7 @@ const Login = () => {
         e.preventDefault()
         try {
             const { accessToken } = await login({ username, password }).unwrap()
+            console.log(accessToken)
             dispatch(setCredentials({ accessToken }))
             setUsername('')
             setPassword('')
@@ -44,7 +45,7 @@ const Login = () => {
             } else {
                 setErrMsg(err.data?.message);
             }
-            errRef.current.focus();
+            // errRef.current.focus();
         }
     }
 
