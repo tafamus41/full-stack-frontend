@@ -11,7 +11,7 @@ import NewUserForm from './features/users/NewUserForm'
 import EditNote from './features/notes/EditNote'
 import NewNote from './features/notes/NewNote'
 import Prefetch from './features/auth/Prefetch'
-import PersistLogin from './features/auth/PersistLogin';
+import PersistLogin from './features/auth/persistLogin';
 
 
 function App() {
